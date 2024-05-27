@@ -8,7 +8,7 @@ namespace UnitySourceGenerator {
         public const string NotifyChangeAttributeText = @"
 using System;
 
-namespace TBC.Generators {
+namespace UnitySourceGenerators {
     [AttributeUsage(AttributeTargets.Field, Inherited = false, AllowMultiple = false)]
     internal class NotifyChangeAttribute : Attribute { 
         public NotifyChangeAttribute() { }
