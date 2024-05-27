@@ -1,4 +1,9 @@
-# UnitySourceGenerator
+# Unity Source Generators
+This project aims to build many source generators to simplify repetitive coding
+within the unity ecosystem, but not limited to it also. 
+
+Source Generators included:
+* **NotifyChange**: similar to a `INotifyPropertyChanged` from CommunityToolkit but simpler(and working).
 
 ## How to use in Unity
 
