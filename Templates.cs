@@ -30,16 +30,16 @@ public partial class {0} {{
 ";
 
         public const string notifyChangePartialMethodsCode = @"
-        {2} partial void On{3}Changing({1} newValue);
-        {2} partial void On{3}Changed({1} oldValue, {1} newValue);
+        partial void On{3}Changed({1} newValue);
+        partial void On{3}Changing({1} oldValue, {1} newValue);
         {2} {1} {3} {{
             get => {0};
             set {{
                 var oldValue = {0};
                 var newValue = value;
-                On{3}Changing(newValue);
+                On{3}Changing(oldValue, newValue);
                 {0} = newValue;
-                On{3}Changed(oldValue, newValue);
+                On{3}Changed(newValue);
             }}
         }}
 ";
